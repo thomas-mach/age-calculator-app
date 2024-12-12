@@ -1,37 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="section-input">
+        <form action="">
+          <div class="input-box">
+            <label for="day">DAY</label>
+            <input type="text" id="day" placeholder="DD" />
+            <p class="error-placeholder" id="error-placeholder">error</p>
+          </div>
+          <div class="input-box">
+            <label for="month">MONTH</label>
+            <input type="text" id="month" placeholder="MM" />
+            <p class="error-placeholder" id="error-placeholder">error</p>
+          </div>
+          <div class="input-box">
+            <label for="year">YEAR</label>
+            <input type="text" id="year" placeholder="YYYY" />
+            <p class="error-placeholder" id="error-placeholder">error</p>
+          </div>
+          <div class="button-box">
+            <button type="submit">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 46 44"
+              >
+                <g fill="none" stroke="#FFF" stroke-width="2">
+                  <path
+                    d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                  />
+                </g>
+              </svg>
+            </button>
+            <div class="divider"></div>
+          </div>
+        </form>
+      </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
+      <div class="section-output">
+        <div>
+          <span>--</span>
+          <p class="days" id="days">years</p>
+        </div>
+        <div>
+          <span>--</span>
+          <p class="months" id="months">months</p>
+        </div>
+        <div>
+          <span>--</span>
+          <p class="days" id="days">days</p>
+        </div>
+      </div>
+    </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
 </html>
