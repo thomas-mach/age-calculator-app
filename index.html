@@ -3,13 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,29 +10,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>Frontend Mentor | Age calculator app</title>
+    <script src="script.js" defer></script>
+    <title>Age calculator</title>
   </head>
   <body>
     <div class="card">
       <div class="section-input">
-        <form action="">
+        <form id="form">
           <div class="input-box">
-            <label for="day">DAY</label>
+            <label for="day" id="label-day">DAY</label>
             <input type="text" id="day" placeholder="DD" />
-            <p class="error-placeholder" id="error-placeholder">error</p>
+            <p class="error-placeholder" id="error-day"></p>
           </div>
           <div class="input-box">
-            <label for="month">MONTH</label>
+            <label for="month" id="label-month">MONTH</label>
             <input type="text" id="month" placeholder="MM" />
-            <p class="error-placeholder" id="error-placeholder">error</p>
+            <p class="error-placeholder" id="error-month"></p>
           </div>
           <div class="input-box">
-            <label for="year">YEAR</label>
+            <label for="year" id="label-year">YEAR</label>
             <input type="text" id="year" placeholder="YYYY" />
-            <p class="error-placeholder" id="error-placeholder">error</p>
+            <p class="error-placeholder" id="error-year"></p>
           </div>
           <div class="button-box">
-            <button type="submit">
+            <button type="submit" id="button">
               <svg
                 class="icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,28 +52,20 @@
           </div>
         </form>
       </div>
-
       <div class="section-output">
         <div>
-          <span>--</span>
-          <p class="days" id="days">years</p>
+          <span id="years">--</span>
+          <p class="days">years</p>
         </div>
         <div>
-          <span>--</span>
-          <p class="months" id="months">months</p>
+          <span id="months">--</span>
+          <p class="months">months</p>
         </div>
         <div>
-          <span>--</span>
-          <p class="days" id="days">days</p>
+          <span id="days">--</span>
+          <p class="days">days</p>
         </div>
       </div>
     </div>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
   </body>
 </html>

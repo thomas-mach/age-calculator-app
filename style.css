@@ -65,6 +65,20 @@ input {
   outline: none;
 }
 
+.input-error-style {
+  border: 1px solid var(--color-error);
+}
+
+.label-error-style {
+  color: red;
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--color-surface) inset !important;
+  -webkit-text-fill-color: initial !important;
+}
+
 input:focus {
   border: 1px solid var(--color-primary);
   caret-color: var(--color-primary);
@@ -83,10 +97,11 @@ label {
 }
 
 .error-placeholder {
-  font-size: 12px;
+  height: 7px;
+  font-size: 7px;
   line-height: 12px;
   color: var(--color-error);
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -125,6 +140,7 @@ button {
   width: 100%;
   display: flex;
   flex-direction: column;
+  user-select: none;
 }
 
 .section-output div {
@@ -132,8 +148,8 @@ button {
   gap: 2px;
 }
 
-span,
-p {
+.section-output div p,
+span {
   font-size: 56px;
   font-weight: 800;
   font-style: italic;
@@ -141,12 +157,17 @@ p {
   line-height: 110%;
 }
 
-p {
+.section-output div p {
   color: var(--color-text);
 }
 
 span {
   color: var(--color-primary);
+}
+
+label {
+  user-select: none;
+  cursor: pointer;
 }
 
 /* MEDIA QUERY */
@@ -172,6 +193,11 @@ span {
 
   .input-box {
     gap: 8px;
+  }
+
+  .error-placeholder {
+    height: 12px;
+    font-size: 12px;
   }
 
   input {
@@ -202,7 +228,7 @@ span {
 
   /* -- SECTION OUTPUT -- */
   span,
-  p {
+  .section-output div p {
     font-size: 100px;
   }
 }
