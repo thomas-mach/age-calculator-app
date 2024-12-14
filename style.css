@@ -27,7 +27,7 @@ body {
   font-size: clamp(1rem, 2vw, 4rem);
   max-width: 840px;
   padding: 3rem 1.5em;
-  margin: 0 1em;
+  margin: 0 0.5em;
   border-radius: 1.5rem;
   border-bottom-right-radius: 6.25em;
   background-color: var(--color-surface);
@@ -49,7 +49,7 @@ form {
 }
 
 .input-box {
-  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   display: flex;
   flex-direction: column;
   gap: 0.185rem;
@@ -57,10 +57,11 @@ form {
 
 input {
   width: 100%;
-  padding: 0.6em 12px;
-  border-radius: 0.5em;
+  max-height: 2rem;
+  padding: 1em 12px;
+  border-radius: 0.3em;
   border: 1px solid var(--color-line);
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: bold;
   letter-spacing: 1%;
   color: var(--color-text);
@@ -91,7 +92,7 @@ input::placeholder {
 }
 
 label {
-  font-size: 0.75em;
+  font-size: 0.6em;
   letter-spacing: 25%;
   font-weight: bold;
   user-select: none;
