@@ -118,7 +118,7 @@ label {
   display: flex;
   justify-content: center;
   margin-top: 1.25em;
-  margin-bottom: 2em;
+  margin-bottom: 1.25em;
 }
 
 button {
@@ -162,8 +162,8 @@ button {
 
 .section-output div p,
 span {
-  font-size: clamp(3.5rem, 6vw, 10rem);
-  /* font-size: 56px; */
+  font-size: clamp(2.75rem, 6vw, 10rem);
+
   font-weight: 800;
   font-style: italic;
   letter-spacing: -2;
